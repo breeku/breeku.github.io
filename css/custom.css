@@ -1,0 +1,79 @@
+body {
+    position: relative;
+    letter-spacing: -1px;
+    margin: 10px;
+    min-height: calc(100vh - 100px);
+}
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+html, body{
+    height: 100%
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left:0;
+    border-width:0;
+    border-top: 2px solid #fff;
+    align-items: center;
+    width: 100%;
+}
+hr.w {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-width: 0;
+    border-top: 2px solid #fff;
+    width:100%;
+    margin-left:0;
+    transition: color 1s ease;
+}
+@media only screen and (max-width: 768px) {
+    .hidesmall{
+        display: none;
+    }
+}
+.jumbotron{
+    height: 70vh;
+}
+.nopad {
+    padding-left: 0px;
+}
+.projects {
+}
+.project-card{
+    border-radius: 25px;
+    background-color: rgba(137,66,244,0.02);
+    box-shadow: 0px 0px 30px black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.project-content{
+    text-align: center;
+}
+.img{
+    width: 500px;
+    max-width: 100%; 
+    max-height: 500px; 
+    display: flex;
+    justify-content:center; 
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.project-screenshot{
+
+}
+.project-content{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
