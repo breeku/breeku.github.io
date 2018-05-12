@@ -41,6 +41,9 @@ hr.w {
     .hidesmall{
         display: none;
     }
+    .smallcenter{
+        text-align: center;
+    }
 }
 .jumbotron{
     height: 70vh;
