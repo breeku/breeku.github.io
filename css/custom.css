@@ -35,6 +35,9 @@ hr.w {
     transition: color 1s ease;
 }
 @media only screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
     .hidesmall{
         display: none;
     }
@@ -58,13 +61,12 @@ hr.w {
     text-align: center;
 }
 .img{
-    width: 500px;
     max-width: 100%; 
     max-height: 500px; 
     display: flex;
     justify-content:center; 
     flex-wrap: wrap;
-    overflow: hidden;
+    
 }
 .project-screenshot{
 
