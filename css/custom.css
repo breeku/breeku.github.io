@@ -25,23 +25,15 @@ hr {
     align-items: center;
     width: 100%;
 }
-hr.w {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    border-width: 0;
-    border-top: 2px solid #fff;
-    width:100%;
-    margin-left:0;
-    transition: color 1s ease;
-}
 @media only screen and (max-width: 768px) {
     body {
-        margin: 0px;
+        margin: 5px;
     }
     .hidesmall{
         display: none;
     }
     .smallcenter{
+        margin-bottom: 2rem;
         text-align: center;
     }
 }
