@@ -3493,7 +3493,7 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -5233,7 +5233,7 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #714cdf !important; }
+  background-color: rgb(113, 76, 223) !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -7792,7 +7792,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 3.5rem; } }
 
 body {
-  background-image: url("../images/ng-background-dot.png"); }
+}
 
 .btn-shadow {
   margin-left: 8px; }
