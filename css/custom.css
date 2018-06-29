@@ -1,8 +1,12 @@
 body {
+    background-color: #08060c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     position: relative;
     letter-spacing: -1px;
     margin: 10px;
+    margin-top: 0;
     min-height: calc(100vh - 100px);
+    scroll-behavior: smooth;
 }
 html {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
@@ -25,25 +29,12 @@ hr {
     align-items: center;
     width: 100%;
 }
-@media only screen and (max-width: 768px) {
-    body {
-        margin: 5px;
-    }
-    .hidesmall{
-        display: none;
-    }
-    .smallcenter{
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-}
 .jumbotron{
+    padding-top: 5rem;
     height: 70vh;
 }
 .nopad {
     padding-left: 0px;
-}
-.projects {
 }
 .project-card{
     border-radius: 25px;
@@ -61,10 +52,6 @@ hr {
     display: flex;
     justify-content:center; 
     flex-wrap: wrap;
-    
-}
-.project-screenshot{
-
 }
 .project-content{
     padding-left: 0px;
@@ -73,4 +60,39 @@ hr {
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+.dots{
+    text-align: center;
+}
+.display-1{
+    text-shadow: 0px 0px 1px black;
+}
+.header{
+    max-height: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 5px;
+    }
+    .hidesmall{
+        display: none;
+    }
+    .smallcenter{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .jumbotron{
+        padding: 0;
+        padding-top: 4rem;
+        height: 70vh;
+    }
+    .project-card{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .jumbotron{
+        height: 75vh;
+    }
 }
