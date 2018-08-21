@@ -175,6 +175,9 @@ a, a:hover, a:visited, a:active {
         padding-bottom: 1em;
     }
     @media only screen and (max-width: 700px) {
+    .nav {
+        margin-top: 2em;
+    }
     .project1 {
         padding-top: 2em;
         padding-bottom: 2em;
@@ -191,8 +194,8 @@ a, a:hover, a:visited, a:active {
         min-width: 400px;
     }
 }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         .projectpic {
-            min-width: 250px;
+            min-width: 255px;
         }
     }
