@@ -199,3 +199,8 @@ a, a:hover, a:visited, a:active {
             min-width: 255px;
         }
     }
+    @media only screen and (max-width: 350px) {
+        .nav {
+            margin-top: 1em;
+        }
+    }
