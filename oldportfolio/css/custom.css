@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(8, 6, 12);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.04'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+    letter-spacing: -1px;
+    min-height: calc(100vh - 100px);
+    scroll-behavior: smooth;
+}
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+html, body{
+    height: 100%
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left:0;
+    border-width:0;
+    border-top: 2px solid #fff;
+    align-items: center;
+    width: 100%;
+}
+.jumbotron{
+    padding-top: 5rem;
+    height: 75vh;
+}
+.nopad {
+    padding-left: 0px;
+}
+.project-card{
+    border-radius: 25px;
+    background-color: rgba(137,66,244,0.02);
+    box-shadow: 0px 0px 30px black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.project-content{
+    text-align: center;
+}
+.img{
+    max-width: 100%; 
+    max-height: 500px; 
+    display: flex;
+    justify-content:center; 
+    flex-wrap: wrap;
+}
+.project-content{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.dots{
+    text-align: center;
+}
+.display-1{
+    text-shadow: 0px 0px 1px black;
+}
+.header{
+    max-height: 1rem;
+}
+.buzz{
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(8, 6, 12, 0.3);
+    border-radius: 0;
+    border-top-width: 1.5px;
+    border-top-style: solid;
+    border-color: rgba(137,66,244,0.1);
+    margin: 0;
+}
+.skill{
+    min-width: 7rem;
+    max-width: 7rem;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 5px;
+    }
+    .hidesmall{
+        display: none;
+    }
+    .smallcenter{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .jumbotron{
+        padding: 0;
+        padding-top: 4rem;
+        height: 70vh;
+    }
+    .project-card{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .jumbotron{
+        height: 75vh;
+    }
+}
