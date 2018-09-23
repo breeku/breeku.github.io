@@ -14,12 +14,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
@@ -42,20 +41,13 @@
     </li>
 </ul>
 
-<div class="container-fluid waves">
-	<div class="svg-container">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 495">
-			<path id="curve2" d="M0,352S291.69,352,565,352C945,352,1099,352,1487,352,1779.39,352,1920,352,1920,352V352H0V48.38Z" transform="translate(0, 145)"/>
-			<path id="curve1" d="M0,285S278,285,552,285C1070,285,1064,285,1478.38 285,1780,285,1920,285,1920,285V285H1V19.8Z" transform="translate(0, 215)"/>
-			<path id="curve0" d="M0,199V195S195,195,499.5,195C990.58,195,1065,195,1427.25,195,1712.37,195,1887,195,1920,195V196Z" transform="translate(0, 305)"/>
-		</svg>
-    </div>
+<div class="container-fluid bg">
     <div class="container-fluid text-center">
             <h3 class="subtext">Hey! I'm</h3>
         </div>
         <div class="container-fluid introduction text-center animated fadeIn delay-4s">
-            <h2 class="text-muted" style="font-weight: bold;">Matias Mäkelä</h2>
-            <p class="title">Fullstack Web Developer</p>
+            <h2 class="name">Matias Mäkelä</h2>
+            <p class="title">Web Developer</p>
             <p class="text-muted">I do websites, design, 3D, games, music and a whole lot more. <br>
                     I’m always open to new challenges and problems. <br>
                     If you think you have something I might be interested in, contact me!
@@ -72,33 +64,34 @@
     <div class="container skilled animated fadeIn delay-4s">
         <p class="subheader text-muted">Skilled</p>
         <div class="row">
-            <div class="col mx-2">
+            <div class="col-md-6 mx-2">
                 <span class="badge badge-primary">HTML5</span>
                 <span class="badge badge-primary">CSS3</span>
                 <span class="badge badge-primary">Javascript</span>
+                <span class="badge badge-primary">ES6</span>
                 <span class="badge badge-primary">Git</span>
+                <span class="badge badge-primary">Vue.js</span>
+                <span class="badge badge-primary">Flexbox</span>
+                <span class="badge badge-primary">CSSGrid</span>
+                <span class="badge badge-primary">Bootstrap 4</span>
+                <span class="badge badge-primary">APIs</span>
+                <span class="badge badge-primary">REST API</span>
+                <span class="badge badge-primary">MongoDB</span>
+                <span class="badge badge-primary">Firebase</span>
+                <span class="badge badge-primary">Express</span>
+                <span class="badge badge-primary">Node.js</span>
+                <span class="badge badge-primary">jQuery</span>
                 <span class="badge badge-primary">Photoshop</span>
                 <span class="badge badge-primary">Illustrator</span>
                 <span class="badge badge-primary">Adobe XD</span>
                 <span class="badge badge-primary">Blender</span>
             </div>
         </div>
-        <div class="row">
-            <div class="col mx-2">
-                <span class="badge badge-primary">Vue.js</span>
-                <span class="badge badge-primary">Flexbox</span>
-                <span class="badge badge-primary">CSSGrid</span>
-                <span class="badge badge-primary">jQuery</span>
-                <span class="badge badge-primary">Bootstrap 4</span>
-                <span class="badge badge-primary">APIs</span>
-                <span class="badge badge-primary">REST API</span>
-            </div>
-        </div>
     </div>
     <div class="container pt-3 skilled animated fadeIn delay-4s">
         <p class="subheader text-muted">Basics</p>
         <div class="row">
-            <div class="col mx-2">
+            <div class="col-md-6 mx-2">
                 <span class="badge badge-danger">Python</span>
                 <span class="badge badge-danger">Java</span>
                 <span class="badge badge-danger">C#</span>
@@ -106,13 +99,6 @@
                 <span class="badge badge-danger">Magento</span>
                 <span class="badge badge-danger">PHP</span>
                 <span class="badge badge-danger">SQL</span>
-                <span class="badge badge-danger">MongoDB</span>
-                <span class="badge badge-danger">Express</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col mx-2">
-                <span class="badge badge-danger">Node.js</span>
             </div>
         </div>
     </div>
@@ -124,11 +110,43 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <a href="https://meowvue.now.sh/" target="_blank"><img src="/img/meows.png" class="projectpic img-fluid"/></a>
+                </div>
+                <div class="col projecttext">
+                    <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Meows</h4>
+                    <p class="projecttype text-muted mb-2">Fullstack | MEVN</p>
+                    <p class="projectdescription mb-2">
+                        Personal project to create a full-blown full stack CRUD app. <br>
+                        Goal was to be able to do CRUD operations with authentication. <br>
+                        Link to <a href="https://github.com/breeku/Meows-Vue.js" target="!blank" style="color:blue">Github</a>, which has more goals.
+                    </p>
+                <div class="techstack">
+                    <span class="badge badge-primary">MongoDB</span>
+                    <span class="badge badge-primary">Express</span>
+                    <span class="badge badge-primary">Vue.js</span>
+                    <span class="badge badge-primary">Node</span>
+                    <span class="badge badge-primary">Firebase</span>
+                    <span class="badge badge-primary">Vuetify</span>
+                    <span class="badge badge-primary">Axios</span>
+                    <span class="badge badge-primary">APIs</span>
+                    <span class="badge badge-primary">Javascript</span>
+                    <span class="badge badge-primary">Monk</span>
+                    <span class="badge badge-primary">HTML</span>
+                    <span class="badge badge-primary">CSS3</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid project2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
                     <a href="https://codepen.io/breeku/full/ZogJpo/" target="_blank"><img src="/img/wikipedia.png" class="projectpic img-fluid"/></a>
                 </div>
                 <div class="col projecttext">
                     <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Wiki Search App</h4>
-                    <p class="projecttype text-muted mb-2">FreeCodeCamp project</p>
+                    <p class="projecttype text-muted mb-2">Frontend</p>
                     <p class="projectdescription mb-2">Assignment was given to create a "Wikipedia Viewer". <br>
                         Requirements were that you could search for any wikipedia article you wish, and
                         clicking the search result would lead you to the said page. <br>
@@ -147,7 +165,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid project2">
+    <div class="container-fluid project3">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -155,7 +173,7 @@
                 </div>
                 <div class="col projecttext">
                     <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Quote Machine</h4>
-                    <p class="projecttype text-muted mb-2">FreeCodeCamp project</p>
+                    <p class="projecttype text-muted mb-2">Frontend</p>
                     <p class="projectdescription mb-2">
                             Assigment was given to create a "Quote Machine". <br>
                             Requirements were that you could press a button to show a new quote, and
@@ -176,7 +194,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid project3">
+    <div class="container-fluid project4">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -184,7 +202,7 @@
                 </div>
                 <div class="col projecttext">
                     <h4 class="projectname mb-0" style="font-weight: bold;">Previous Portfolio</h4>
-                    <p class="projecttype text-muted mb-2">Personal</p>
+                    <p class="projecttype text-muted mb-2">Frontend</p>
                     <p class="projectdescription mb-2">
                         My previous portfolio page. <br>
                         Otherwise fine but I wanted more colorful and cohesive looking portfolio. <br>
@@ -217,6 +235,4 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/custom.js"></script>
 </html>

@@ -3,10 +3,12 @@
 }
 
 html, body{
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
+    scroll-behavior: smooth;
 }
 
 a, a:hover, a:visited, a:active {
@@ -22,34 +24,37 @@ a, a:hover, a:visited, a:active {
     margin-right: auto;
     left: 0;
     right: 0;
-    color: white;
-    font-weight: bold;
+    color: #313131;
     font-size: 1.375em;
 }
 
 .introduction {
     max-width: 680px;
-    border-radius: 6px;
-    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -3px 3px rgba(0,0,0,0.07);
+    background-color: white;
     padding: 1.5em;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1),0 1px 6px rgba(0,0,0,.15);
+    padding-top: 1em;
 }
-
+.name{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
 .subtext {
-    padding-top: 3em;
-    font-weight: bold;
-    color: rgba(255,255,255,0.9);
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    color: #313131;
 }
 .title {
-    font-weight: bold;
-    color: #549bff;
+    color: #29B6F6;
 }
 .computer {
     width: 120px;
     float: left;
 }
 .headertitle {
-    margin: 4em;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .subheader {
     margin: 0;
@@ -66,8 +71,12 @@ a, a:hover, a:visited, a:active {
 .skilled {
     font-size: 1.1em;
 }
+.badge {
+    margin-top: 8px;
+    margin-left: 3px;
+}
 .projects {
-    padding-top: 10em;
+    padding-top: 15vh;
 }
 .projectpic {
     width: 600px;
@@ -80,29 +89,35 @@ a, a:hover, a:visited, a:active {
         transform: scale(1.05);
     }
 .projecttext {
-    color: white;
-    text-shadow: 0 1px 1px rgba(0,0,0,.15);
+    color: #313131;
 }
 .projectdescription {
-    font-weight: bold;
+    color: #313131;
     font-size: 0.95em;
 }
 .project1 {
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(to top, #e0c3fc 0%, #bfd3ff 50%);
     min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .project2 {
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    background-image: linear-gradient(20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
     min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .project3 {
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background-image: linear-gradient(to bottom, #c1dfc4 0%, #e8ddec 100%);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project4 {
+    background-image: linear-gradient(to bottom, #bdc2e8 0%, #bdc2e8 50%, #ffffff 100%);
     min-height: 600px;
     display: flex;
     flex-direction: column;
@@ -115,34 +130,18 @@ a, a:hover, a:visited, a:active {
 .blue {
     color: #29B6F6;
 }
-.waves {
+.bg {
     background: #66a6ff;
-    background: linear-gradient(to right, #549bff, #71abfd);
-    background-position: center;
+    background-image: radial-gradient(73% 147%, #EADFDF 30%, #ECE2DF 100%), radial-gradient(50% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
     position: relative;
     z-index: -99;
-    padding-top: 13vh;
-  }
-  .svg-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -99;
-  }
-  .svg-container svg {
-    display: block;
-  }
-  .svg-container svg path {
-    fill: #fff;
-  }
-  .svg-container svg path#curve1 {
-    opacity: .7;
-  }
-  .svg-container svg path#curve2 {
-    opacity: .4;
-  }
+    padding-top: 10vh;
+}
     @media only screen and (max-width: 990px) {
+    .skilled {
+        max-width: 100%;
+    }
     .projectname {
         padding-top: 1em;
         text-align: center;
@@ -175,8 +174,12 @@ a, a:hover, a:visited, a:active {
         padding-bottom: 1em;
     }
     @media only screen and (max-width: 700px) {
+    .bg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .nav {
-        margin-top: 2em;
+        margin-top: 0.5em;
     }
     .project1 {
         padding-top: 2em;
