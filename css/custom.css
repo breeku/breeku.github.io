@@ -75,8 +75,13 @@ a, a:hover, a:visited, a:active {
     margin-top: 8px;
     margin-left: 3px;
 }
+.wakatime{
+    margin-top: 15vh;
+    border-radius: 20px;
+    box-shadow: 0 -3px 3px rgba(0,0,0,0.1);
+}
 .projects {
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 .projectpic {
     width: 600px;
