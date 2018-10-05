@@ -102,7 +102,7 @@ a, a:hover, a:visited, a:active {
 }
 .project1 {
     background-color: #CDDCDC;
-    background-image: linear-gradient(to bottom, #fff8f4 0%, #ace0f9 100%);
+    background-image: linear-gradient(to bottom, #c2e9fb 0%, #a1c4fd 100%);
     min-height: 600px;
     display: flex;
     flex-direction: column;
