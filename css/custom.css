@@ -24,13 +24,13 @@ a, a:hover, a:visited, a:active {
     margin-right: auto;
     left: 0;
     right: 0;
-    color: #313131;
+    color: white;
     font-size: 1.375em;
 }
 
 .introduction {
     max-width: 680px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     box-shadow: 0 -3px 3px rgba(0,0,0,0.07);
     background-color: white;
     padding: 1.5em;
@@ -43,13 +43,13 @@ a, a:hover, a:visited, a:active {
 .subtext {
     font-size: 1.5rem;
     padding-top: 3rem;
-    color: #313131;
+    color: white;
 }
 .title {
     color: #29B6F6;
 }
 .computer {
-    width: 120px;
+    width: 130px;
     float: left;
 }
 .headertitle {
@@ -70,6 +70,9 @@ a, a:hover, a:visited, a:active {
 }
 .skilled {
     font-size: 1.1em;
+}
+.skillbg{
+    background-color: red;
 }
 .badge {
     margin-top: 8px;
@@ -102,7 +105,7 @@ a, a:hover, a:visited, a:active {
 }
 .project1 {
     background-color: #CDDCDC;
-    background-image: linear-gradient(to bottom, #fff8f4 0%, #ace0f9 100%);
+    background-image: linear-gradient(to top, #999ff5 0%, #68ccfa 100%);
     min-height: 600px;
     display: flex;
     flex-direction: column;
@@ -144,12 +147,24 @@ a, a:hover, a:visited, a:active {
     color: #29B6F6;
 }
 .bg {
-    background: #66a6ff;
-    background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
-    position: relative;
+    background: url(/img/bg.svg);
+    background-repeat: repeat-x;
+    background-position: 180%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
     z-index: -99;
     padding-top: 10vh;
+    width: 100vw;
 }
+    @media only screen and (max-width: 1400px) {
+    .bg {
+        background-size: cover;
+    }
+    }
     @media only screen and (max-width: 990px) {
     .skilled {
         max-width: 100%;
