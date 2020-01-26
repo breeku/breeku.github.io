@@ -1,285 +1,592 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112318085-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-112318085-2');
-    </script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-
-<body>
-
-    <ul class="nav animated fadeIn delay-4s">
-        <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" target="!blank">Resume</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://github.com/breeku" target="!blank">Github</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://codepen.io/breeku/" target="!blank">Codepen</a>
-        </li>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#links">Contact</a>
-        </li>
-    </ul>
-
-    <div class="container-fluid bg">
-        <div class="container-fluid text-center">
-            <h3 class="subtext">Hey! I'm</h3>
-        </div>
-        <div class="container-fluid introduction text-center animated fadeIn delay-4s">
-            <h2 class="name">Matias Mäkelä</h2>
-            <p class="title">Web Developer</p>
-            <p class="text-muted">I do websites, design, 3D, games, music and a whole lot more. <br>
-                I’m always open to new challenges and problems. <br>
-                If you think you have something I might be interested in, contact me!
-            </p>
-            <div class="container">
-                <img src="/img/comp.svg" class="computer"></img>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Portfolio</title>
+        <link
+            href="http://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="./static/css/modal.css" rel="stylesheet" type="text/css" />
+        <link href="./static/css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <div id="overlay">
+        <div class="main">
+            <span id="arrow" onClick="handleMargin()">↓</span>
+            <h1 id="title" class="title">Matias</h1>
+            <p id="subtitle" class="subtitle">Fullstack Developer</p>
+            <div class="links">
+                <h1 id="projects" class="link" onCLick="handleProjects()">
+                    Projects
+                </h1>
+                <h1 id="about" class="link" onCLick="handleAbout()">About</h1>
             </div>
         </div>
-    </div>
-
-    <div class="container text-center headertitle pt-5 animated fadeIn delay-4s">
-        <h3>Skills</h3>
-        <hr class="underline">
-    </div>
-    <div class="container skilled animated fadeIn delay-4s">
-        <p class="subheader text-muted">Skilled</p>
-        <div class="row">
-            <div class="col-md-6 mx-2">
-                <span class="badge badge-primary">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-                <span class="badge badge-primary">Javascript</span>
-                <span class="badge badge-primary">ES5/6/7/8</span>
-                <span class="badge badge-primary">Git</span>
-                <span class="badge badge-primary">Vue.js</span>
-                <span class="badge badge-primary">Flexbox</span>
-                <span class="badge badge-primary">CSSGrid</span>
-                <span class="badge badge-primary">Bootstrap 4</span>
-                <span class="badge badge-primary">APIs</span>
-                <span class="badge badge-primary">REST API</span>
-                <span class="badge badge-primary">MongoDB</span>
-                <span class="badge badge-primary">Firebase</span>
-                <span class="badge badge-primary">Express</span>
-                <span class="badge badge-primary">Node.js</span>
-                <span class="badge badge-primary">jQuery</span>
-                <span class="badge badge-primary">Photoshop</span>
-                <span class="badge badge-primary">Illustrator</span>
-                <span class="badge badge-primary">Adobe XD</span>
-                <span class="badge badge-primary">Blender</span>
-            </div>
-            <div class="col-md-6 mx-2 pt-4">
-                <p class="subheader text-muted">Basics</p>
-                <span class="badge badge-danger">Python</span>
-                <span class="badge badge-danger">Java</span>
-                <span class="badge badge-danger">C#</span>
-                <span class="badge badge-danger">Wordpress</span>
-                <span class="badge badge-danger">Magento</span>
-                <span class="badge badge-danger">PHP</span>
-                <span class="badge badge-danger">SQL</span>
-            </div>
+        <div class="footer">
+            <a target="!blank" href="https://github.com/breeku">Github</a>
+            ||
+            <a target="!blank" href="mailto:jmatias.makela@gmail.com">Email</a>
         </div>
-    </div>
-    <!--
-    <div class="container wakatime fadeIn delay-4s" style="max-width:800px;">
-        <embed src="https://wakatime.com/share/@brekki/d52661ff-ffa1-4688-bcfa-358df5fb6651.svg"></embed>
-    </div>
-    -->
-    <div class="container text-center headertitle projects animated fadeIn delay-4s" id="projects">
-        <h3>Projects</h3>
-        <hr class="underline">
-    </div>
-    <div class="container-fluid project1">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="https://playlisttabfinder.now.sh/" target="_blank"><img src="/img/playlisttabfinder.png" class="projectpic img-fluid" /></a>
+        <div id="projectspage">
+            <div class="project">
+                <a
+                    href="https://songsterify.herokuapp.com/"
+                    target="!blank"
+                    class="projectpic songsterify"
+                ></a>
+                <div class="description">
+                    <div class="details">
+                        <h1 class="projectname">Songsterify</h1>
+                        <p class="projecttype">Fullstack ~ MERN</p>
+                        <p>
+                            Log in via your Spotify account, and browse your
+                            playlist's for guitar tabs from Songsterr.
+                            <br />
+                            Discover new songs to play, since normally you can
+                            only search for singular songs / artists, but using
+                            Songsterify you can search whole playlist's.
+                            <br />
+                            Future plans include custom generated playlist's
+                            according to user's most liked artists, and a way to
+                            search songs in certain tuning.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button
+                            class="button"
+                            data-micromodal-trigger="songsterify"
+                        >
+                            made with
+                        </button>
+                        <a
+                            href="https://github.com/breeku/Songsterify"
+                            target="!blank"
+                        >
+                            <button class="button">Github</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="col projecttext">
-                    <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Playlist Tab Finder</h4>
-                    <p class="projecttype text-muted mb-2">Fullstack | MEVN</p>
-                    <p class="projectdescription mb-2">
-                        Using Spotify's API and webscraping to acquire tabs & tuning from Songsterr for Spotify playlist tracks. <br>
-                        Link to <a href="https://github.com/breeku/Vue.js-PlaylistTabFinder" target="!blank" style="color:blue">Github</a>,
-                        which has goals.
-                    </p>
-                    <div class="techstack">
-                        <span class="badge badge-primary">MongoDB</span>
-                        <span class="badge badge-primary">Express</span>
-                        <span class="badge badge-primary">Vue.js</span>
-                        <span class="badge badge-primary">Node</span>
-                        <span class="badge badge-primary">Webscraping</span>
-                        <span class="badge badge-primary">Vuetify</span>
-                        <span class="badge badge-primary">Axios</span>
-                        <span class="badge badge-primary">APIs</span>
-                        <span class="badge badge-primary">Javascript</span>
-                        <span class="badge badge-primary">Monk</span>
-                        <span class="badge badge-primary">CSS3</span>
+            </div>
+            <div class="project">
+                <a
+                    href="http://users.metropolia.fi/~matiamak/Jarvikartta/"
+                    target="!blank"
+                    class="projectpic jarvikartta"
+                ></a>
+                <div class="description">
+                    <div class="details">
+                        <h1 class="projectname">Lake Map</h1>
+                        <p class="projecttype">Frontend</p>
+                        <p>
+                            A school project, in which you can lookup any of
+                            Finland's lakes and acquire any information about
+                            them that is found from the offical Finnish
+                            Environment Institute's lake database.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button
+                            class="button"
+                            data-micromodal-trigger="järvikartta"
+                        >
+                            Made with
+                        </button>
+                        <a
+                            href="https://github.com/Tupsu-jy/Jarvikartta"
+                            target="!blank"
+                            ><button class="button">Github</button></a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectpic weatherstation"></div>
+                <div class="description">
+                    <div class="details">
+                        <h1 class="projectname">Raspberry Weather station</h1>
+                        <p class="projecttype">Fullstack ~ MERN</p>
+                        <p>
+                            Using Arduino with temperature and humidity sensors
+                            to send data to a Nodejs server running on
+                            Raspberry.
+                            <br />
+                            In the Github repository there is also a basic setup
+                            guide to end up with a weather station of your own.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button
+                            class="button"
+                            data-micromodal-trigger="raspberry"
+                        >
+                            Made with
+                        </button>
+                        <a
+                            href="https://github.com/breeku/Raspberry-Weather-station"
+                            target="!blank"
+                            ><button class="button">
+                                Github
+                            </button></a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <a
+                    href="https://playlisttabfinder.now.sh/"
+                    target="!blank"
+                    class="projectpic playlisttabfinder"
+                ></a>
+                <div class="description">
+                    <div class="details">
+                        <h1 class="projectname">Playlist Tab Finder</h1>
+                        <p class="projecttype">Fullstack ~ MEVN</p>
+                        <p>
+                            Lookup your spotify account, and browse your
+                            playlist's for guitar tabs from Songsterr.
+                            <br />
+                            Similiar idea to Songsterify, but without the
+                            ability to login. Another difference is that the
+                            tabs are being scraped from Songsterr, and put in a
+                            database of my own. This because a API did not exist
+                            when this was made.
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button
+                            class="button"
+                            data-micromodal-trigger="playlisttabfinder"
+                        >
+                            Made with
+                        </button>
+                        <a
+                            href="https://github.com/breeku/Vue.js-PlaylistTabFinder"
+                            target="!blank"
+                            ><button class="button">Github</button></a
+                        >
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid project2">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="https://meowvue.now.sh/" target="_blank"><img src="/img/meows.png" class="projectpic img-fluid" /></a>
+        <div id="aboutpage">
+                <div class="about">
+                    <div class="introduction">
+                        <h1 style="margin-top: 0;">
+                            I'm Matias Mäkelä, a
+                            <span class="accent">Fullstack Developer</span>
+                            currently studying at
+                            <span class="accent">Metropolia UAS</span>.
+                        </h1>
+                    </div>
+                    <div class="personal">
+                        <p class="personaltext">
+                            I'm studying computer science and communication
+                            technology. My major is software engineering. My
+                            studies include a variety of different courses like
+                            game development, web software development, data
+                            structures and algorithms and information security.
+                            My studies also include some mathematics and
+                            physics.
+                            <br />
+                            I have been developing different kinds of fullstack
+                            projects since 2017. Before that I've worked on
+                            games and mods. I seek to challenge myself and
+                            aspire to learn new while deepening my existing
+                            knowledge and skills even further.
+                            <br />
+                            In my free time I like to play the guitar, go to swim, 
+                            listen to music and plan and do different kinds 
+                            of projects. I have enjoyed playing video games since 
+                            I was young. 
+                            <br />
+                            Got something you want to discuss with me? You can
+                            contact me
+                            <b><a
+                                target="!blank"
+                                href="mailto:jmatias.makela@gmail.com"
+                                >here</a
+                            ></b>
+                        </p>
+                    </div>
+                    <div class="image"></div>
+                    <div class="skills">
+                        <h1 style="text-align: center">
+                            <span class="accent">Skills</span>
+                        </h1>
+                        <div class="skillsection">
+                            <div class="modals">
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="javascript"
+                                >
+                                    Javascript
+                                </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="java"
+                                >
+                                    Java
+                                </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="csharp"
+                                >
+                                    C#
+                                </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="database"
+                                >
+                                    Databases
+                                </button>
+                                <button
+                                class="tag"
+                                data-micromodal-trigger="tests"
+                            >
+                                Tests
+                            </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="creative"
+                                >
+                                    Creative
+                                </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="server"
+                                >
+                                    Servers
+                                </button>
+                                <button
+                                    class="tag"
+                                    data-micromodal-trigger="apps"
+                                >
+                                    Apps
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col projecttext">
-                    <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Meows</h4>
-                    <p class="projecttype text-muted mb-2">Fullstack | MEVN</p>
-                    <p class="projectdescription mb-2">
-                        Personal project to create a full-blown full stack CRUD app. <br>
-                        Goal was to be able to do CRUD operations with authentication. <br>
-                        Link to <a href="https://github.com/breeku/Meows-Vue.js" target="!blank" style="color:blue">Github</a>,
-                        which has more goals.
-                    </p>
-                    <div class="techstack">
-                        <span class="badge badge-primary">MongoDB</span>
-                        <span class="badge badge-primary">Express</span>
-                        <span class="badge badge-primary">Vue.js</span>
-                        <span class="badge badge-primary">Node</span>
-                        <span class="badge badge-primary">Firebase</span>
-                        <span class="badge badge-primary">Vuetify</span>
-                        <span class="badge badge-primary">Axios</span>
-                        <span class="badge badge-primary">APIs</span>
-                        <span class="badge badge-primary">Javascript</span>
-                        <span class="badge badge-primary">Monk</span>
-                        <span class="badge badge-primary">CSS3</span>
+        </div>
+            <!-- MODALS -->
+            <!-- PROJECTS -->
+            <div class="modal micromodal-slide" id="songsterify" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="songsterify-title"
+                    >
+                        <main class="modal__content" id="songsterify-content">
+                            <code>
+                                "Frontend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react-router":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react-router-dom":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"redux": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react-redux":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"redux-thunk":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"material-ui":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"node-vibrant":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"js-cookie":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"axios": "latest",
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"dotenv": "latest"
+                                <br />
+                                },
+                                <br />
+                                "Backend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express-rate-limit":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express-slow-down":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"spotify-web-api-node":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"dotenv": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"body-parser":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"cookie-parser":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"axios": "latest"
+                                <br />
+                                }
+                            </code>
+                        </main>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid project3">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="https://codepen.io/breeku/full/ZogJpo/" target="_blank"><img src="/img/wikipedia.png"
-                            class="projectpic img-fluid" /></a>
-                </div>
-                <div class="col projecttext">
-                    <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Wiki Search App</h4>
-                    <p class="projecttype text-muted mb-2">Frontend</p>
-                    <p class="projectdescription mb-2">Assignment was given to create a "Wikipedia Viewer". <br>
-                        Requirements were that you could search for any wikipedia article you wish, and
-                        clicking the search result would lead you to the said page. <br>
-                        Wiki articles are retrieved via API.
-                    </p>
-                    <div class="techstack">
-                        <span class="badge badge-primary">HTML5</span>
-                        <span class="badge badge-primary">CSS3</span>
-                        <span class="badge badge-primary">Javascript</span>
-                        <span class="badge badge-primary">Vue.js</span>
-                        <span class="badge badge-primary">Vuetify</span>
-                        <span class="badge badge-primary">Axios</span>
-                        <span class="badge badge-primary">API</span>
+            <div class="modal micromodal-slide" id="järvikartta" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="järvikartta-title"
+                    >
+                        <main class="modal__content" id="järvikartta-content">
+                            <code>
+                                "Frontend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"leaflet": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"leaflet-routing-machine":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"leaflet-control-geocoder":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"awesome-notifications":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"lodash-merge":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"puppeteer":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"codeceptjs":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"pollyjs/core":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"pollyjs/adapter-puppeteer":
+                                "latest"<br />
+                                }
+                            </code>
+                        </main>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid project4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="https://codepen.io/breeku/full/aGKwqQ/" target="_blank"><img src="/img/quote.png" class="projectpic img-fluid" /></a>
-                </div>
-                <div class="col projecttext">
-                    <h4 class="projectname mb-0" style="font-weight: bold;">Vue.js Quote Machine</h4>
-                    <p class="projecttype text-muted mb-2">Frontend</p>
-                    <p class="projectdescription mb-2">
-                        Assigment was given to create a "Quote Machine". <br>
-                        Requirements were that you could press a button to show a new quote, and
-                        a button to tweet the said quote. <br>
-                        Quotes are retrieved via API.
-                    </p>
-                    <div class="techstack">
-                        <span class="badge badge-primary">HTML5</span>
-                        <span class="badge badge-primary">CSS3</span>
-                        <span class="badge badge-primary">Animate</span>
-                        <span class="badge badge-primary">Javascript</span>
-                        <span class="badge badge-primary">Vue.js</span>
-                        <span class="badge badge-primary">Vuetify</span>
-                        <span class="badge badge-primary">Axios</span>
-                        <span class="badge badge-primary">API</span>
+            <div class="modal micromodal-slide" id="raspberry" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="raspberry-title"
+                    >
+                        <main class="modal__content" id="raspberry-content">
+                            <code>
+                                "Frontend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react-dom":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"react-router-dom":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"axios": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"recharts": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"material-ui":
+                                "latest",<br />
+                                },
+                                <br />
+                                "Backend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"body-parser":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"lowdb": "latest",<br />
+                                }
+                            </code>
+                        </main>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid project5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="/oldportfolio/index.html" target="_blank"><img src="/img/portfolio.png" class="projectpic img-fluid" /></a>
-                </div>
-                <div class="col projecttext">
-                    <h4 class="projectname mb-0" style="font-weight: bold;">Previous Portfolio</h4>
-                    <p class="projecttype text-muted mb-2">Frontend</p>
-                    <p class="projectdescription mb-2">
-                        My previous portfolio page. <br>
-                        Otherwise fine but I wanted more colorful and cohesive looking portfolio. <br>
-                    </p>
-                    <div class="techstack">
-                        <span class="badge badge-primary">HTML5</span>
-                        <span class="badge badge-primary">CSS3</span>
-                        <span class="badge badge-primary">Bootstrap</span>
-                        <span class="badge badge-primary">Flexbox</span>
+            <div class="modal micromodal-slide" id="playlisttabfinder" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="playlisttabfinder-title"
+                    >
+                        <main class="modal__content" id="playlisttabfinder-content">
+                            <code>
+                                "Frontend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"vue": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"vue-router":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"vuetify": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"axios": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"tweenjs": "latest",<br />
+                                },
+                                <br />
+                                "Backend": {
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"cheerio": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"express-rate-limit":
+                                "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"monk": "latest",<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;"spotify-web-api-node":
+                                "latest",<br />
+                                }
+                            </code>
+                        </main>
                     </div>
                 </div>
             </div>
+            <!-- ENDPROJECTS-->
+            <!-- SKILLS -->
+            <div class="modal micromodal-slide" id="javascript" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="javascript-title"
+                    >
+                        <main class="modal__content" id="javascript-content">
+                            <h1>Javascript</h1>
+                            <p>
+                                The language I have used the most time in. I love how versatile Javascript is, there is always something to learn.
+                                <br>
+                                Popular libraries and frameworks I've used include:<br style="margin:0"/>
+                                Nodejs, Express, React, Vuejs, Webpack, npm, Threejs, leaflet, Sentry, SocketIO and much more.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="java" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="java-title"
+                    >
+                        <main class="modal__content" id="java-content">
+                            <h1>Java</h1>
+                            <p>
+                                The language that I have learned in school. I've taken multiple Java courses, beginner and more advanced.<br>
+                                In Java I haven't used many libraries or frameworks, in one course we did use leJOS, which is Java for Lego Mindstorm.<br style="margin:0;">
+                                I've also taken short dive into Kotlin in our introduction to Android app programming.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="csharp" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="csharp-title"
+                    >
+                        <main class="modal__content" id="csharp-content">
+                            <h1>C#</h1>
+                            <p>
+                                This is the language that i've mostly used in game programming, in Unity.<br>
+                                It is also the language that I now use the least, since I haven't been using Unity apart from school courses.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="database" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="database-title"
+                    >
+                        <main class="modal__content" id="database-content">
+                            <h1>Databases</h1>
+                            <p>
+                                I have experience with both Relational databases and Document databases, those being SQL and MongoDB. <br style="margin:0;">
+                                I've used SQL in Unity, and MongoDB in my fullstack development with mongoose.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="tests" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="tests-title"
+                    >
+                        <main class="modal__content" id="tests-content">
+                            <h1>Tests</h1>
+                            <p>
+                                I've done Unit testing and E2E testing.<br>
+                                Some frameworks and libraries include:<br style="margin:0">
+                                Jest, Cypress, Puppeteer, JUnit and Codecept.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="creative" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="creative-title"
+                    >
+                        <main class="modal__content" id="creative-content">
+                            <h1>Creative</h1>
+                            <p>
+                                Before I started programming seriously, I used to mostly focus on creative content.
+                                Such as 3D modelling, and illustration.<br>
+                                Thus I know my way around Blender, Photoshop, Illustrator and more.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="server" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="server-title"
+                    >
+                        <main class="modal__content" id="server-content">
+                            <h1>Servers</h1>
+                            <p>
+                                I have my own Raspberry running a web server and is also a NAS. I've also setup remote servers and know my way around linux.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="modal micromodal-slide" id="apps" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="apps-title"
+                    >
+                        <main class="modal__content" id="apps-content">
+                            <h1>Apps</h1>
+                            <p>
+                                I've developed apps for Android with Android Studio, and multiplatform with React Native.
+                            </p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <!-- ENDSKILLS -->
         </div>
+        <!-- ENDMODALS -->
     </div>
-    <div class="container-fluid mt-4 mb-4 text-center" id="links">
-        <div class="row footer">
-            <div class="col-sm-4 col-xs-6">
-                <h4>Contact</h4>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <i class="far fa-envelope blue"></i><a href="mailto:mail@matiasmakela.com">
-                    <p> mail@matiasmakela.com</p>
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <i class="fab fa-discord blue"></i>
-                <p> brekki#3804</p>
-            </div>
-        </div>
-    </div>
-    </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
+    <body>
+        <script src="./static/bundle.js"></script>
 </html>

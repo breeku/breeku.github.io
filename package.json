@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "micromodal": "^0.4.2",
+    "three": "^0.112.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "esmify": "^2.1.1",
+    "tinyify": "^2.5.2"
+  },
+  "scripts": {
+    "start": "watchify js/main.js -o static/bundle.js -p esmify -p tinyify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breeku/threeJSportfolio.git"
+  },
+  "author": "Matias Mäkelä",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breeku/threeJSportfolio/issues"
+  },
+  "homepage": "https://github.com/breeku/threeJSportfolio#readme"
+}
