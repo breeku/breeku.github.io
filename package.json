@@ -10,7 +10,8 @@
   "devDependencies": {
     "browserify": "^16.5.0",
     "esmify": "^2.1.1",
-    "tinyify": "^2.5.2"
+    "tinyify": "^2.5.2",
+    "watchify": "^3.11.1"
   },
   "scripts": {
     "start": "watchify js/main.js -o static/bundle.js -p esmify -p tinyify",
