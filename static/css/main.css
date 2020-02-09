@@ -304,6 +304,11 @@ br {
     background-image: url("/static/imgs/jarvikartta.png");
 }
 
+.kotasaari {
+    background-image: url("/static/imgs/kotasaari.png");
+    background-position: 0% 0%;
+}
+
 .about {
     overflow-x: hidden;
     border-radius: 15px;
