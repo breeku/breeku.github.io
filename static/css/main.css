@@ -187,6 +187,7 @@ br {
     display: grid;
     min-height: 350px;
     max-width: 80vmax;
+    min-width: 80vmax;
     margin: auto;
     border-radius: 15px;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
