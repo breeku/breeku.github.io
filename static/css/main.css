@@ -309,6 +309,22 @@ br {
     background-position: 0% 0%;
 }
 
+.esp8266-weatherstation {
+    background-image: url("/static/imgs/esp8266-weatherstation.jpg");
+    background-size: contain;
+}
+
+.tapahtumavaraus {
+    background-image: url("/static/imgs/tapahtumavaraus.png");
+    background-position: 0% 0%;
+}
+
+.opentrackmania {
+    background-image: url("/static/imgs/opentrackmania.png");
+    background-position: 0% 0%;
+}
+
+
 .about {
     overflow-x: hidden;
     border-radius: 15px;
@@ -381,6 +397,8 @@ br {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
+    background-image: var(--gradient-top);
+    border-radius: 4px;
     grid-area: skills;
     margin-bottom: 100px;
     margin-top: 2rem;
@@ -394,8 +412,8 @@ br {
 }
 
 .modals {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));

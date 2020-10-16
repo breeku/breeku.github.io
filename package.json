@@ -14,8 +14,7 @@
     "watchify": "^3.11.1"
   },
   "scripts": {
-    "start": "watchify js/main.js -o static/bundle.js -p esmify -p tinyify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "watchify js/main.js -o static/bundle.js -p esmify -p tinyify"
   },
   "repository": {
     "type": "git",
